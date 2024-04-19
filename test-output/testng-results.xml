@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="2" passed="1" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-04-18T16:59:15 IST" name="Suite" finished-at="2024-04-18T17:02:18 IST" duration-ms="182858">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.RunCukes@5cde6747]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test started-at="2024-04-18T16:59:15 IST" name="Test" finished-at="2024-04-18T17:02:18 IST" duration-ms="182858">
+      <class name="runner.RunCukes">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runner.RunCukes@5cde6747]" started-at="2024-04-18T16:59:15 IST" name="setUpClass" finished-at="2024-04-18T16:59:15 IST" duration-ms="781" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@10e8c7a2]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.RunCukes@5cde6747]" started-at="2024-04-18T16:59:15 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-04-18T17:00:09 IST" duration-ms="53414" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["To check valid login by user"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["In order to check a user should able to login into Milk Basket"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.RunCukes@5cde6747]" started-at="2024-04-18T17:00:09 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-04-18T17:02:15 IST" duration-ms="125926" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["To check for all category should display when user clicks them"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["In order to check"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+            <message>
+              <![CDATA[element click intercepted: Element is not clickable at point (318, 638)
+  (Session info: chrome=123.0.6312.123)
+Build info: version: '4.19.1', revision: 'abe0ee07dc'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '22'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [5e138f3d4bec6ef507f8ef18fd7e494c, clickElement {id=f.E4D06D584039C74C638E14EA0D656861.d.DBC6F65A90945129109A00F6318EACAD.e.105}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 123.0.6312.123, chrome: {chromedriverVersion: 123.0.6312.122 (31f8248cdd9..., userDataDir: C:\Users\HIMANS~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52064}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52064/devtoo..., se:cdpVersion: 123.0.6312.123, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (5e138f3d4bec6ef507f8ef18fd7e494c)] -> xpath: //div[@class='CategoryMenu___StyledMenuItems-sc-d3svbp-4 cAslOa']/nav/ul[1]/li]
+Session ID: 5e138f3d4bec6ef507f8ef18fd7e494c]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element is not clickable at point (318, 638)
+  (Session info: chrome=123.0.6312.123)
+Build info: version: '4.19.1', revision: 'abe0ee07dc'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '22'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [5e138f3d4bec6ef507f8ef18fd7e494c, clickElement {id=f.E4D06D584039C74C638E14EA0D656861.d.DBC6F65A90945129109A00F6318EACAD.e.105}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 123.0.6312.123, chrome: {chromedriverVersion: 123.0.6312.122 (31f8248cdd9..., userDataDir: C:\Users\HIMANS~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52064}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52064/devtoo..., se:cdpVersion: 123.0.6312.123, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (5e138f3d4bec6ef507f8ef18fd7e494c)] -> xpath: //div[@class='CategoryMenu___StyledMenuItems-sc-d3svbp-4 cAslOa']/nav/ul[1]/li]
+Session ID: 5e138f3d4bec6ef507f8ef18fd7e494c
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+at Pages.actions.ShopByCategoryActions.ListOfCategory(ShopByCategoryActions.java:40)
+at Steps.ShopByCategorySteps.particular_category_name_should_come_in_the_title_bar(ShopByCategorySteps.java:66)
+at ✽.particular categoryName should come in the  title bar(file:///C:/Users/HimanshuNaudiyal/project/New_Bigbasket/src/test/resources/features/shopByCategory.feature:13)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runner.RunCukes@5cde6747]" started-at="2024-04-18T17:02:15 IST" name="tearDownClass" finished-at="2024-04-18T17:02:18 IST" duration-ms="2700" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- runner.RunCukes -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
