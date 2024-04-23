@@ -12,7 +12,7 @@ Feature: In order to check a user should able to login into Milk Basket
 
     Examples: 
       | MobileNumber | OTP    |
-      |   9999459457 | 123123 |
+      |   8920083168 | 123123 |
 
 
 
@@ -25,4 +25,4 @@ Feature: In order to check a user should able to login into Milk Basket
 
     Examples: 
       | MobileNumber |
-      |   9999459457 |
+      |   8920083168 |

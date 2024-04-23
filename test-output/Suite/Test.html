@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>1/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Thu Apr 18 16:59:15 IST 2024</td>
+<td>Started on:</td><td>Mon Apr 22 17:26:56 IST 2024</td>
 </tr>
-<tr><td>Total time:</td><td>182 seconds (182858 ms)</td>
+<tr><td>Total time:</td><td>83 seconds (83876 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -77,15 +77,15 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='runner.RunCukes.runScenario()'><b>runScenario</b><br>Test class: runner.RunCukes<br>Test method: Runs Cucumber Scenarios<br>Parameters: "To check for all category should display when user clicks them", "In order to check"</td>
-<td><div><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element is not clickable at point (318, 638)
-  (Session info: chrome=123.0.6312.123)
+<td><div><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=124.0.6367.60)
 Build info: version: &apos;4.19.1&apos;, revision: &apos;abe0ee07dc&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;22&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [5e138f3d4bec6ef507f8ef18fd7e494c, clickElement {id=f.E4D06D584039C74C638E14EA0D656861.d.DBC6F65A90945129109A00F6318EACAD.e.105}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 123.0.6312.123, chrome: {chromedriverVersion: 123.0.6312.122 (31f8248cdd9..., userDataDir: C:\Users\HIMANS~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52064}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52064/devtoo..., se:cdpVersion: 123.0.6312.123, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (5e138f3d4bec6ef507f8ef18fd7e494c)] -&gt; xpath: //div[@class=&apos;CategoryMenu___StyledMenuItems-sc-d3svbp-4 cAslOa&apos;]/nav/ul[1]/li]
-Session ID: 5e138f3d4bec6ef507f8ef18fd7e494c
+Command: [f4973e3304351dce3c983b9a2e0f4842, clickElement {id=f.E5C257CD40B5CE173F812D8576A9271E.d.4300E7608F3A9F6A864738C6E5DF3264.e.265}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.60, chrome: {chromedriverVersion: 124.0.6367.60 (8771130bd84f..., userDataDir: C:\Users\HIMANS~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57180}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57180/devtoo..., se:cdpVersion: 124.0.6367.60, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (f4973e3304351dce3c983b9a2e0f4842)] -&gt; xpath: //div[@class=&apos;col-span-12 mt-3 mb-8&apos;]/div[2]/section[2]//li[1]/div/div/div[5]/div/div[2]/button]
+Session ID: f4973e3304351dce3c983b9a2e0f4842
 	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
@@ -95,19 +95,20 @@ Session ID: 5e138f3d4bec6ef507f8ef18fd7e494c
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
 	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
 	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
-	at Pages.actions.ShopByCategoryActions.ListOfCategory(ShopByCategoryActions.java:40)
-	at Steps.ShopByCategorySteps.particular_category_name_should_come_in_the_title_bar(ShopByCategorySteps.java:66)
+	at Pages.actions.ShopByCategoryActions.Addtoccart(ShopByCategoryActions.java:97)
+	at Pages.actions.ShopByCategoryActions.ListOfCategory(ShopByCategoryActions.java:55)
+	at Steps.ShopByCategorySteps.particular_category_name_should_come_in_the_title_bar(ShopByCategorySteps.java:67)
 	at ✽.particular categoryName should come in the  title bar(file:///C:/Users/HimanshuNaudiyal/project/New_Bigbasket/src/test/resources/features/shopByCategory.feature:13)
-... Removed 3 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace870627780", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace870627780'><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element is not clickable at point (318, 638)
-  (Session info: chrome=123.0.6312.123)
+... Removed 3 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1308527415", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1308527415'><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=124.0.6367.60)
 Build info: version: &apos;4.19.1&apos;, revision: &apos;abe0ee07dc&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;22&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [5e138f3d4bec6ef507f8ef18fd7e494c, clickElement {id=f.E4D06D584039C74C638E14EA0D656861.d.DBC6F65A90945129109A00F6318EACAD.e.105}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 123.0.6312.123, chrome: {chromedriverVersion: 123.0.6312.122 (31f8248cdd9..., userDataDir: C:\Users\HIMANS~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52064}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52064/devtoo..., se:cdpVersion: 123.0.6312.123, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (5e138f3d4bec6ef507f8ef18fd7e494c)] -&gt; xpath: //div[@class=&apos;CategoryMenu___StyledMenuItems-sc-d3svbp-4 cAslOa&apos;]/nav/ul[1]/li]
-Session ID: 5e138f3d4bec6ef507f8ef18fd7e494c
+Command: [f4973e3304351dce3c983b9a2e0f4842, clickElement {id=f.E5C257CD40B5CE173F812D8576A9271E.d.4300E7608F3A9F6A864738C6E5DF3264.e.265}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.60, chrome: {chromedriverVersion: 124.0.6367.60 (8771130bd84f..., userDataDir: C:\Users\HIMANS~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57180}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57180/devtoo..., se:cdpVersion: 124.0.6367.60, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (f4973e3304351dce3c983b9a2e0f4842)] -&gt; xpath: //div[@class=&apos;col-span-12 mt-3 mb-8&apos;]/div[2]/section[2]//li[1]/div/div/div[5]/div/div[2]/button]
+Session ID: f4973e3304351dce3c983b9a2e0f4842
 	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
 	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
 	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
@@ -120,11 +121,12 @@ Session ID: 5e138f3d4bec6ef507f8ef18fd7e494c
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
 	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
 	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
-	at Pages.actions.ShopByCategoryActions.ListOfCategory(ShopByCategoryActions.java:40)
-	at Steps.ShopByCategorySteps.particular_category_name_should_come_in_the_title_bar(ShopByCategorySteps.java:66)
+	at Pages.actions.ShopByCategoryActions.Addtoccart(ShopByCategoryActions.java:97)
+	at Pages.actions.ShopByCategoryActions.ListOfCategory(ShopByCategoryActions.java:55)
+	at Steps.ShopByCategorySteps.particular_category_name_should_come_in_the_title_bar(ShopByCategorySteps.java:67)
 	at ✽.particular categoryName should come in the  title bar(file:///C:/Users/HimanshuNaudiyal/project/New_Bigbasket/src/test/resources/features/shopByCategory.feature:13)
 </pre></div></td>
-<td>125</td>
+<td>27</td>
 <td>runner.RunCukes@5cde6747</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>

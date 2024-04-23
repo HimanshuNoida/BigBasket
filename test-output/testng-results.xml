@@ -2,26 +2,26 @@
 <testng-results ignored="0" total="2" passed="1" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-04-18T16:59:15 IST" name="Suite" finished-at="2024-04-18T17:02:18 IST" duration-ms="182858">
+  <suite started-at="2024-04-23T14:54:48 IST" name="Default suite" finished-at="2024-04-23T15:02:45 IST" duration-ms="476791">
     <groups>
       <group name="cucumber">
         <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.RunCukes@5cde6747]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2024-04-18T16:59:15 IST" name="Test" finished-at="2024-04-18T17:02:18 IST" duration-ms="182858">
+    <test started-at="2024-04-23T14:54:48 IST" name="Default test" finished-at="2024-04-23T15:02:45 IST" duration-ms="476791">
       <class name="runner.RunCukes">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runner.RunCukes@5cde6747]" started-at="2024-04-18T16:59:15 IST" name="setUpClass" finished-at="2024-04-18T16:59:15 IST" duration-ms="781" status="PASS">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runner.RunCukes@5cde6747]" started-at="2024-04-23T14:54:48 IST" name="setUpClass" finished-at="2024-04-23T14:54:49 IST" duration-ms="700" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@10e8c7a2]]>
+                <![CDATA[org.testng.TestRunner@2e1ad7de]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.RunCukes@5cde6747]" started-at="2024-04-18T16:59:15 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-04-18T17:00:09 IST" duration-ms="53414" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.RunCukes@5cde6747]" started-at="2024-04-23T14:54:49 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-04-23T14:55:43 IST" duration-ms="54207" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -37,7 +37,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.RunCukes@5cde6747]" started-at="2024-04-18T17:00:09 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-04-18T17:02:15 IST" duration-ms="125926" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.RunCukes@5cde6747]" started-at="2024-04-23T14:55:43 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-04-23T15:02:39 IST" duration-ms="415630" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -52,26 +52,30 @@
           </params>
           <exception class="org.openqa.selenium.ElementClickInterceptedException">
             <message>
-              <![CDATA[element click intercepted: Element is not clickable at point (318, 638)
-  (Session info: chrome=123.0.6312.123)
+              <![CDATA[element click intercepted: Element <button class="h-full px-2.5 lg:py-1.5 xl:py-2.5 content-center  grid grid-flow-col lg:gap-x-10.5 xl:gap-x-4.5 rounded-2xs text-white 
+              bg-appleGreen-600 border border-appleGreen-600" id="headlessui-menu-button-:r2:" type="button" aria-haspopup="true" aria-expanded="true" data-headlessui-state="open" aria-controls="headlessui-menu-items-:r3:">...</button> is not clickable at point (275, 12). Other element would receive the click: <button class="h-full px-2.5 lg:py-1.5 xl:py-2.5 content-center  grid grid-flow-col lg:gap-x-10.5 xl:gap-x-4.5 rounded-2xs text-white 
+              bg-appleGreen-600 border border-appleGreen-600" id="headlessui-menu-button-:r0:" type="button" aria-haspopup="true" aria-expanded="false" data-headlessui-state="" aria-controls="headlessui-menu-items-:r1:">...</button>
+  (Session info: chrome=124.0.6367.60)
 Build info: version: '4.19.1', revision: 'abe0ee07dc'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '22'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [5e138f3d4bec6ef507f8ef18fd7e494c, clickElement {id=f.E4D06D584039C74C638E14EA0D656861.d.DBC6F65A90945129109A00F6318EACAD.e.105}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 123.0.6312.123, chrome: {chromedriverVersion: 123.0.6312.122 (31f8248cdd9..., userDataDir: C:\Users\HIMANS~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52064}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52064/devtoo..., se:cdpVersion: 123.0.6312.123, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (5e138f3d4bec6ef507f8ef18fd7e494c)] -> xpath: //div[@class='CategoryMenu___StyledMenuItems-sc-d3svbp-4 cAslOa']/nav/ul[1]/li]
-Session ID: 5e138f3d4bec6ef507f8ef18fd7e494c]]>
+Command: [0b8483a1fab774910a0066ba8cb03afc, clickElement {id=f.9DB7D7027E991B1B080666E30B200558.d.FC004B9CBA2568BC9151DF8517CB0F9F.e.90}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.60, chrome: {chromedriverVersion: 124.0.6367.60 (8771130bd84f..., userDataDir: C:\Users\HIMANS~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54161}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54161/devtoo..., se:cdpVersion: 124.0.6367.60, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (0b8483a1fab774910a0066ba8cb03afc)] -> xpath: //div[@class='Header___StyledCategoryMenu2-sc-19kl9m3-13 ibVaum']/div/div/button]
+Session ID: 0b8483a1fab774910a0066ba8cb03afc]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element is not clickable at point (318, 638)
-  (Session info: chrome=123.0.6312.123)
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <button class="h-full px-2.5 lg:py-1.5 xl:py-2.5 content-center  grid grid-flow-col lg:gap-x-10.5 xl:gap-x-4.5 rounded-2xs text-white 
+              bg-appleGreen-600 border border-appleGreen-600" id="headlessui-menu-button-:r2:" type="button" aria-haspopup="true" aria-expanded="true" data-headlessui-state="open" aria-controls="headlessui-menu-items-:r3:">...</button> is not clickable at point (275, 12). Other element would receive the click: <button class="h-full px-2.5 lg:py-1.5 xl:py-2.5 content-center  grid grid-flow-col lg:gap-x-10.5 xl:gap-x-4.5 rounded-2xs text-white 
+              bg-appleGreen-600 border border-appleGreen-600" id="headlessui-menu-button-:r0:" type="button" aria-haspopup="true" aria-expanded="false" data-headlessui-state="" aria-controls="headlessui-menu-items-:r1:">...</button>
+  (Session info: chrome=124.0.6367.60)
 Build info: version: '4.19.1', revision: 'abe0ee07dc'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '22'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [5e138f3d4bec6ef507f8ef18fd7e494c, clickElement {id=f.E4D06D584039C74C638E14EA0D656861.d.DBC6F65A90945129109A00F6318EACAD.e.105}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 123.0.6312.123, chrome: {chromedriverVersion: 123.0.6312.122 (31f8248cdd9..., userDataDir: C:\Users\HIMANS~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52064}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52064/devtoo..., se:cdpVersion: 123.0.6312.123, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (5e138f3d4bec6ef507f8ef18fd7e494c)] -> xpath: //div[@class='CategoryMenu___StyledMenuItems-sc-d3svbp-4 cAslOa']/nav/ul[1]/li]
-Session ID: 5e138f3d4bec6ef507f8ef18fd7e494c
+Command: [0b8483a1fab774910a0066ba8cb03afc, clickElement {id=f.9DB7D7027E991B1B080666E30B200558.d.FC004B9CBA2568BC9151DF8517CB0F9F.e.90}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.60, chrome: {chromedriverVersion: 124.0.6367.60 (8771130bd84f..., userDataDir: C:\Users\HIMANS~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54161}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54161/devtoo..., se:cdpVersion: 124.0.6367.60, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (0b8483a1fab774910a0066ba8cb03afc)] -> xpath: //div[@class='Header___StyledCategoryMenu2-sc-19kl9m3-13 ibVaum']/div/div/button]
+Session ID: 0b8483a1fab774910a0066ba8cb03afc
 at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
 at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
 at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
@@ -84,8 +88,12 @@ at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverComman
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
 at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
 at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
-at Pages.actions.ShopByCategoryActions.ListOfCategory(ShopByCategoryActions.java:40)
-at Steps.ShopByCategorySteps.particular_category_name_should_come_in_the_title_bar(ShopByCategorySteps.java:66)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+at jdk.proxy2/jdk.proxy2.$Proxy32.click(Unknown Source)
+at Pages.actions.ShopByCategoryActions.ListOfCategory(ShopByCategoryActions.java:75)
+at Steps.ShopByCategorySteps.particular_category_name_should_come_in_the_title_bar(ShopByCategorySteps.java:67)
 at ✽.particular categoryName should come in the  title bar(file:///C:/Users/HimanshuNaudiyal/project/New_Bigbasket/src/test/resources/features/shopByCategory.feature:13)
 ]]>
             </full-stacktrace>
@@ -93,11 +101,11 @@ at ✽.particular categoryName should come in the  title bar(file:///C:/Users/Hi
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runner.RunCukes@5cde6747]" started-at="2024-04-18T17:02:15 IST" name="tearDownClass" finished-at="2024-04-18T17:02:18 IST" duration-ms="2700" status="PASS">
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runner.RunCukes@5cde6747]" started-at="2024-04-23T15:02:39 IST" name="tearDownClass" finished-at="2024-04-23T15:02:45 IST" duration-ms="6211" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
       </class> <!-- runner.RunCukes -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

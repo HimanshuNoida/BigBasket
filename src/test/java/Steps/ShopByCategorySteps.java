@@ -2,6 +2,10 @@ package Steps;
 
 import java.util.List;
 
+import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebElement;
+
 import Pages.actions.HomePageFilterDispayFilterActions;
 import Util.SeleniumDriver;
 import io.cucumber.java.en.And;
@@ -9,15 +13,12 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
-public class ShopByCategorySteps {
+public  class ShopByCategorySteps extends CommonMethods{
 	String title = "bigbasket.com/";
 	Pages.actions.ShopByCategoryActions ShopByCategoryAction = new Pages.actions.ShopByCategoryActions();
 
 	HomePageFilterDispayFilterActions HomePageFilterDispayFilterAction = new HomePageFilterDispayFilterActions();
 
-	public ShopByCategorySteps() {
-
-	}
 
 	String category1;
 	String category2;
@@ -65,10 +66,17 @@ public class ShopByCategorySteps {
 	public void particular_category_name_should_come_in_the_title_bar() throws InterruptedException {
 		ShopByCategoryAction.ListOfCategory(string1, HomePageFilterDispayFilterAction);
 
-		if (BeforeStep.tite != SeleniumDriver.getDriver().getTitle()) {
-			System.out.println("The corresponding category is coming");
-		}
-
 	}
 
+	@Override
+	public void ScrooltoElement(String Element) {
+		
+		
+	}
+
+
+	
+
+	
+	
 }

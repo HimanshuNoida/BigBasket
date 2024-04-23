@@ -2,15 +2,14 @@ package Steps;
 
 import Util.SeleniumDriver;
 
-
 public class After {
 
-	static String tite;
+	static String title;
 
 	@io.cucumber.java.After("@ShopByCategory")
 	public void getTtile() {
 
-		String title = SeleniumDriver.getDriver().getTitle();
+		title = SeleniumDriver.getDriver().getTitle();
 		System.out.println(title);
 
 	}

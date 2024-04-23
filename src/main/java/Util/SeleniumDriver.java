@@ -5,7 +5,6 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-
 public class SeleniumDriver {
 
 	private static SeleniumDriver seleniumDriver;
@@ -32,8 +31,9 @@ public class SeleniumDriver {
 	public static void setDriver() {
 		if (seleniumDriver == null) {
 			seleniumDriver = new SeleniumDriver();
+			seleniumDriver.getDriver().manage().window().maximize();
 			driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-			wait=new WebDriverWait(driver, Duration.ofSeconds(50));
+			wait = new WebDriverWait(driver, Duration.ofSeconds(50));
 		}
 
 	}
